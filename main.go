@@ -7,7 +7,7 @@ import (
 	"goutils/utils"
 )
 
-func main(){
+func main() {
 	funcName := flag.String("cmd", "mtloop", "输入功能（mtloop）")
 	flag.Parse()
 	utils.ConsolePl("Cmd is ", *funcName, " login task scheduing")
