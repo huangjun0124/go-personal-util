@@ -4,6 +4,7 @@ import (
 	"flag"
 	_ "github.com/joho/godotenv/autoload"
 	"goutils/funcs"
+	_024 "goutils/funcs/1024"
 	"goutils/utils"
 )
 
@@ -14,7 +15,9 @@ func main() {
 	switch *funcName {
 	case "mtloop":
 		funcs.ScheduleMtLogin()
+		//阻塞主线程停止
+		select {}
+	case "1024":
+		_024.CrawDagaierFlagsPictures()
 	}
-	//阻塞主线程停止
-	select {}
 }

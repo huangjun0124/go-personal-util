@@ -2,7 +2,7 @@
 #### Mac 下编译 Linux 和 Windows 64位可执行程序
 ```go
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o mtlogin
-CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o mtlogin.exe
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o goutil.exe
 ```
 
 #### Linux 下编译 Mac 和 Windows 64位可执行程序
